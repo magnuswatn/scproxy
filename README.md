@@ -23,7 +23,7 @@ sudo apt-get install libpcsclite-dev pcscd
 ### Installation
 
 ```
-go install https://github.com/magnuswatn/scproxy@latest
+go install github.com/magnuswatn/scproxy@latest
 scproxy --install
 ```
 
