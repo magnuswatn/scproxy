@@ -124,9 +124,9 @@ func handleCors(w http.ResponseWriter, r *http.Request) bool {
 		return false
 	}
 
-	// Why do we not need private-access here?
 	w.Header().Set("Access-Control-Allow-Origin", origin)
 	w.Header().Set("Access-Control-Allow-Methods", "POST")
+	w.Header().Set("Access-Control-Allow-Private-Network", "true")
 	return true
 }
 
