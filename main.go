@@ -470,7 +470,6 @@ func handlePreflight(w http.ResponseWriter, r *http.Request) {
 
 func handleRoot(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte("You have successfully reached the SC proxy"))
-	w.WriteHeader(http.StatusOK)
 }
 
 func getVersionInfo() string {
